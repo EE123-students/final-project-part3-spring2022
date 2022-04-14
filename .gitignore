@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+*.pyc
+~$*
+*.jpeg123
+tmp.*
+data/
+*.log
+*.so
