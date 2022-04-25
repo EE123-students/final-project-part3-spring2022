@@ -164,7 +164,7 @@ class AX25(object):
             callsign, ssid = callsign.split(b"-")
         else:
             ssid = b"0"
-        assert(len(ssid) == 1)
+        assert(int(ssid) >= 0 and int(ssid) < 16)
         assert(len(callsign) <= 6)
         callsign = b"%b%b" % (callsign.ljust(6), ssid)
         # now shift left one bit, argh
